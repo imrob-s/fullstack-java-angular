@@ -87,6 +87,10 @@
 }
 
 .pokemon .number {
+    width: 25px; /* Largura e altura iguais para criar um círculo */
+    height: 25px;
+    background-color: rgb(255, 255, 255); /* Cor de fundo do círculo */
+    border-radius: 50%; /* Define a forma do círculo */
     color: #000;
     opacity: .3;
     text-align: right;
@@ -97,6 +101,10 @@
     text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
+}
+
+.modal-title {
+    text-transform: capitalize !important;
 }
 
 .pokemon .detail {
@@ -127,6 +135,19 @@
     height: 70px;
 }
 
+.bg-primary-opacity {
+    background-color: rgba(0, 0, 0, 0.4); /* Define a cor de fundo com opacidade */
+}
+
+.moreDetailButton {
+    margin: 1rem auto auto;
+}
+
+.container img {
+    margin: 1rem;
+}
+
+
 .pagination {
     display: flex;
     flex-direction: row;
@@ -134,16 +155,6 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-}
-
-.pagination button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
 }
 
 @media screen and (min-width: 380px) {
